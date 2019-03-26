@@ -22,7 +22,7 @@ class ProcessTheClient(threading.Thread):
 				self.connection.sendto(x, self.address)
 				sent+=1
 			print "done sending", self.address
-			size = os.stat('file.jpg').st_size
+			size = os.stat('jpg.jpg').st_size
 			print "\r sent {} of {} " . format(sent, size)
 			time.sleep(10)
 
