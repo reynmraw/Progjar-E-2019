@@ -13,7 +13,7 @@ class ProcessTheClient(threading.Thread):
 		threading.Thread.__init__(self)
 
 	def run(self):
-		file = open('file.jpg', 'rb')
+		file = open('jpg.jpg', 'rb')
 		data = file.read()
 		while True:
 			print "now sending", self.address
