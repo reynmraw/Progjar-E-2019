@@ -31,20 +31,20 @@ class Client(threading.Thread):
 					file.close()
 					fileno += 1
 					file = open('received_client'+str(self.iter)+'_'+str(fileno)+'.jpg', 'wb+')
-				# self.iter += 1
+				
 				received = 0
 		self.my_socket.close()
 
 def main():
 	client1 = Client(1)
 	client2 = Client(2)
-	# client3 = Client(3)
-	# client4 = Client(4)
+	client3 = Client(3)
+	client4 = Client(4)
 
 	client1.start()
 	client2.start()
-	# client3.start()
-	# client4.start()
+	client3.start()
+	client4.start()
 
 if __name__=="__main__":
 	main()
