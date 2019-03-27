@@ -80,23 +80,13 @@ while True:
 				print "Selesai Mengirim", filename
 
 			else:
-
 				print "file tidak ditemukan"
 
-
-
 		else:
-
 			print "error"
-
-
-
+			
 	else:
-
 		print "Perintah tidak ditemukan"
-
-
-
 	print '----------\n'
 
 sock.close()
